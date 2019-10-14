@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <immotor.com.minifacetest.View.FaceView
+        android:id="@+id/faceView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <RelativeLayout
+        android:id="@+id/rl"
+        android:layout_width="462px"
+        android:layout_height="462px"
+        android:layout_marginTop="100px"
+        android:layout_marginLeft="169px"
+        android:gravity="center"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+        <ImageView
+            android:src="@mipmap/face_q_bg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+        </ImageView>
+        <ImageView
+            android:id="@+id/img_pro_circle"
+            android:src="@mipmap/face_rate_"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <ImageView
+            android:id="@+id/img_face_area"
+            android:layout_centerInParent="true"
+            android:src="@mipmap/face_area"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+        </ImageView>
+        <android.support.v7.widget.CardView
+
+            android:layout_centerInParent="true"
+            android:layout_width="440px"
+            android:layout_height="440px"
+            app:cardCornerRadius="220px"
+            android:background="@android:color/transparent"
+            app:cardBackgroundColor="@android:color/transparent"
+            app:cardPreventCornerOverlap="true">
+
+            <ImageView
+                android:alpha="0.7"
+                android:layout_marginTop="440px"
+                android:id="@+id/img_pro_line"
+                android:src="@mipmap/img_pro"
+                android:layout_width="440px"
+                android:layout_height="128px" />
+        </android.support.v7.widget.CardView>
+
+    </RelativeLayout>
+    <View
+        android:alpha="0.7"
+        android:background="#000000"
+        android:layout_width="169px"
+        android:layout_height="wrap_content"
+        app:layout_constraintRight_toLeftOf="@+id/rl"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <View
+        android:alpha="0.7"
+        android:background="#000000"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toRightOf="@+id/rl"
+        app:layout_constraintTop_toTopOf="parent"/>
+    <View
+         android:alpha="0.7"
+         android:background="#000000"
+         android:layout_width="462px"
+         android:layout_height="100px"
+         android:layout_marginLeft="169px"
+         app:layout_constraintLeft_toLeftOf="parent"
+         app:layout_constraintTop_toTopOf="parent" />
+    <View
+        android:alpha="0.7"
+        android:background="#000000"
+        android:layout_width="462px"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="169px"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rl" />
+</android.support.constraint.ConstraintLayout>
